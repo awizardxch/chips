@@ -1,12 +1,12 @@
 flowchart TB
-    subgraph named["The id is NAMED &mdash; what V13 did"]
+    subgraph named["The id is NAMED - what V13 did"]
         direction TB
         N1["solution:<br/>settlement_coin_id"]
         N2["assert announcement<br/>( asset, id )"]
         N3["binds the asset and the id,<br/>and says nothing about<br/>how much it holds<br/><b>a one-mojo coin passes<br/>as a 250,000 input</b>"]
         N1 --> N2 --> N3
     end
-    subgraph derived["The id is DERIVED &mdash; what V14 requires"]
+    subgraph derived["The id is DERIVED - what V14 requires"]
         direction TB
         D1["solution:<br/>parent, amount"]
         D2["id = coinid( parent,<br/>settlement_puzzle_hash,<br/>amount )<br/>the third input comes from<br/>the ASSET, not the solution"]
